@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUSTINE</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">JB</div>
+        <div class="link">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#gallery" class="nav-link">Gallery</a>
+            <a href="#contact" class="nav-link">Contact</a>
+            <a onclick="logout()" class="nav-link">Log Out</a>
+        </div>
+    </div>
+    <div class="container" id="home">
+        <div class="intro">
+            <div class="intros">
+                <div class="texts">
+                    <p>Hi! I'm,</p>
+                    <h1>Justine<br> Bacaylan</h1>
+                    <p>Future Developer</p>
+                </div>
+                <a href="#calculator"  class="btn">View Calculator</a>
+            </div>
+        </div>
+        <div class="photo"></div>
+    </div>
+    <div class="project-btn">
+        <a href="#calculator">Calculator</a>
+    </div>
+    <section class="about" id="about">
+        <h2>About</h2>
+        <div class="mini-container">
+            <div class="picture"></div>
+            <div class="description">
+                <div class="heading">
+                    <div class="name">Justine Bacaylan</div>
+                    <div class="status">BSIT Student</div>
+                </div>
+                <div class="body">
+                    It doesn’t matter how slowly your steps are, as long as you don’t stop.                
+                </div>
+                <button class="resume-btn"><a href="./resume/index.html" target="_blank">Resume</a></button>
+            </div>
+        </div>
+    </section>
+    <section class="calculator" id="calculator">
+        <h1 align="center">My Simple Calculator</h1>
+        <input type="text" id="display" readonly>
+        <div class="buttons">
+          <button onclick="clearDisplay()" class="col2-1">C</button>
+          <button onclick="backspace()" class="col2-2">Del</button>
+          <button onclick="appendToDisplay('7')">7</button>
+          <button onclick="appendToDisplay('8')">8</button>
+          <button onclick="appendToDisplay('9')">9</button>
+          <button onclick="appendToDisplay('/')">/</button>
+          <button onclick="appendToDisplay('4')">4</button>
+          <button onclick="appendToDisplay('5')">5</button>
+          <button onclick="appendToDisplay('6')">6</button>
+          <button onclick="appendToDisplay('*')">*</button>
+          <button onclick="appendToDisplay('1')">1</button>
+          <button onclick="appendToDisplay('2')">2</button>
+          <button onclick="appendToDisplay('3')">3</button>
+          <button onclick="appendToDisplay('-')">-</button>
+          <button onclick="appendToDisplay('0')">0</button>
+          <button onclick="appendToDisplay('.')">.</button>
+          <button onclick="calculateResult()">=</button>
+          <button onclick="appendToDisplay('+')">+</button>
+        </div>
+    </section>
+    <section id="gallery" class="gallery">
+        <h1>Gallery</h1>
+        <div class="pictures">
+            <img src="images/justine1.jpg" alt="">
+            <img src="images/justine2.jpg" alt="">
+            <img src="images/justine3.jpg" alt="">
+        </div>
+    </section>
+      
+    <section class="contact" id="contact">
+        <h2>Contact</h2>
+        <div class="contact-container">
+            <div class="form">
+                <div class="line">
+                    <input type="text" placeholder="name">
+                    <input type="email" placeholder="email">
+                </div>
+                <div class="line">
+                    <input type="tel" placeholder="phone (optional)">
+                    <input type="text" placeholder="address (optional)">
+                </div>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                <button>Send Message</button>
+            </div>
+            <div class="details">
+                <div class="wrapper">
+                    <div class="info">justinebacaylan12@gmail.com</div>
+                    <div class="info">09633823994</div>
+                    <div class="info">Pajac, Lapu Lapu City</div> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/sript.js"></script>
+</body>
+</html>
